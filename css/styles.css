@@ -1,3 +1,11 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --primary-bg-color: #ffffff;
+  --secondary-bg-color: #f5f4fa;
+}
+
 /*-- основной цвет #212121--*/
 /*-- вторичный цвет #757575--*/
 /*--белый цвет #FFFFFF--*/
@@ -6,6 +14,50 @@
 /* ----основной цвет фона #FFFFFF---*/
 /* ----вторичный цвет фона #F5F4FA---*/
 body {
-  color: #757575;
+  color: var(--primary-text-color);
   background-color: #ffffff;
+}
+
+.logo {
+  color: var(--title-text-color);
+}
+.logo:hover {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+/* ----Навигация сайта---*/
+.site-nav a {
+  color: var(--title-text-color);
+}
+.site-nav a:hover,
+site-nav a:focus {
+  color: var(--accent-color);
+}
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+/* ----Герой---*/
+
+.hero-title {
+  color: var(--primary-bg-color);
+}
+/* ----Секции---*/
+.section-title {
+  color: var(--title-text-color);
+}
+/* ----Кнопка---*/
+.button {
+  color: var(--title-text-color);
+  background-color: var(--primary-bg-color);
+}
+.button.primary {
+  background-color: var(--accent-color);
+  color: var(--primary-bg-color);
+}
+.button.secondary {
+  background-color: var(--secondary-bg-color);
+  color: var(--title-text-color);
 }
