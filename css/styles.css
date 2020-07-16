@@ -6,6 +6,11 @@
   --secondary-bg-color: #f5f4fa;
 }
 
+/*-- Шрифты--*/
+
+/*font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
 /*-- основной цвет #212121--*/
 /*-- вторичный цвет #757575--*/
 /*--белый цвет #FFFFFF--*/
@@ -15,13 +20,14 @@
 /* ----вторичный цвет фона #F5F4FA---*/
 body {
   color: var(--primary-text-color);
-  background-color: #ffffff;
+  background-color: var(--primary-bg-color);
 }
 
 .logo {
   color: var(--title-text-color);
 }
-.logo:hover {
+.logo:hover,
+logo:focus {
   color: var(--accent-color);
 }
 
@@ -39,11 +45,21 @@ site-nav a:focus {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+/* ----Контакты---*/
+.contact a {
+  color: var(--primary-text-color);
+}
+.contact a:hover,
+contact a:focus {
+  color: var(--accent-color);
+}
+
 /* ----Герой---*/
 
 .hero-title {
   color: var(--primary-bg-color);
 }
+
 /* ----Секции---*/
 .section-title {
   color: var(--title-text-color);
