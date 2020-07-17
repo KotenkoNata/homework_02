@@ -16,7 +16,9 @@ font-family: 'Roboto', sans-serif;*/
 :root {
   --primary-text-color: #757575;
   --title-text-color: #212121;
+  --most-view-text-color: #ffffff;
   --accent-color: #2196f3;
+  --color-with-transperency: rgba(255, 255, 255, 0.6);
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f5f4fa;
 }
@@ -30,16 +32,17 @@ body {
   font-size: 14px;
   line-height: 1.71;
 }
-
-a {
-  text-decoration: none;
+.list {
+  list-style: none;
 }
+/* ----Лого---*/
 .logo {
   color: var(--title-text-color);
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+  text-decoration: none;
 }
 .logo:hover,
 logo:focus {
@@ -48,9 +51,6 @@ logo:focus {
 .logo-accent {
   color: var(--accent-color);
 }
-.list {
-  list-style: none;
-}
 /* ----Навигация сайта---*/
 .site-nav a {
   color: var(--title-text-color);
@@ -58,6 +58,7 @@ logo:focus {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
 }
 .site-nav a:hover,
 site-nav a:focus {
@@ -67,18 +68,46 @@ site-nav a:focus {
   color: var(--accent-color);
 }
 /* ----Контакты---*/
-.contact a {
-  color: var(--primary-text-color);
+.header-contact {
+  font-style: normal;
+  font-weight: 500;
 }
-.contact a:hover,
-contact a:focus {
+.header-contact a {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  line-height: 1.14;
+}
+.header-contact a:hover,
+header-contact a:focus,
+.footer-contact a:hover,
+footer-contact a:focus {
   color: var(--accent-color);
+}
+
+.footer-contact a {
+  text-decoration: none;
+  font-style: normal;
+  color: var(--color-with-transperency);
+  background-color: var(--secondary-bg-color);
+}
+.adress {
+  font-weight: 400;
+  color: var(--most-view-text-color);
+  background-color: var(--secondary-bg-color);
+}
+
+b {
+  font-weight: 700;
+  line-height: 1.14;
+  color: var(--most-view-text-color);
+  background-color: var(--secondary-bg-color);
 }
 
 /* ----Герой---*/
 
 .hero-title {
-  color: var(--primary-bg-color);
+  color: var(--most-view-text-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -88,20 +117,45 @@ contact a:focus {
 }
 
 /* ----Секции---*/
-
 .section-title {
-  color: var(--title-text-color);
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
+  text-align: center;
 }
+
+/* ----Наши преимущества---*/
+
+.section-title,
 .item-title {
   color: var(--title-text-color);
   font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
 }
-/* ----Кнопка---*/
+
+.item-title {
+  line-height: 1.14;
+  font-size: 14px;
+}
+
+/* ----Чем мы занимаемся---*/
+.details {
+  color: var(--most-view-text-color);
+  background-color: var(--secondary-bg-color);
+}
+/* ----Наша команда---*/
+.team {
+  background-color: var(--secondary-bg-color);
+}
+.element-title {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+.description {
+  line-height: 1.19;
+}
+
+/* ----Кнопки---*/
 .button {
   color: var(--title-text-color);
   background-color: var(--primary-bg-color);
@@ -114,8 +168,33 @@ contact a:focus {
 .button.primary {
   background-color: var(--accent-color);
   color: var(--primary-bg-color);
+  text-decoration: none;
 }
-.button.secondary {
+.filtr-button {
   background-color: var(--secondary-bg-color);
   color: var(--title-text-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+button:hover,
+button:focus {
+  color: var(--most-view-text-color);
+  background-color: var(--accent-color);
+}
+.work-examples a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.work-examples h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.work-examples p {
 }
