@@ -154,7 +154,27 @@ b {
 .description {
   line-height: 1.19;
 }
+/* ----Портфолио--Наши работы---*/
+.gallery a {
+  text-decoration: none;
+  color: inherit;
+}
 
+.gallery h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+.gallery .lead {
+  font-size: 16px;
+  line-height: 1.87;
+}
+.gallery .excerpt {
+  font-size: 18px;
+  line-height: 1.56;
+}
 /* ----Кнопки---*/
 .button {
   color: var(--title-text-color);
@@ -162,7 +182,7 @@ b {
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
-  line-height: 1.88;
+  line-height: 1.87;
   letter-spacing: 0.06em;
 }
 .button.primary {
@@ -183,18 +203,4 @@ button:hover,
 button:focus {
   color: var(--most-view-text-color);
   background-color: var(--accent-color);
-}
-.work-examples a {
-  text-decoration: none;
-  color: inherit;
-}
-
-.work-examples h3 {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--title-text-color);
-}
-.work-examples p {
 }
