@@ -95,6 +95,7 @@ footer-contact a:focus {
   font-weight: 400;
   color: var(--most-view-text-color);
   background-color: var(--secondary-bg-color);
+  font-style: normal;
 }
 
 b {
