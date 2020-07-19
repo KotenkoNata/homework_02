@@ -103,6 +103,7 @@ b {
   line-height: 1.14;
   color: var(--most-view-text-color);
   background-color: var(--secondary-bg-color);
+  text-transform: uppercase;
 }
 
 /* ----Герой---*/
@@ -115,6 +116,7 @@ b {
   text-align: center;
   letter-spacing: 0.06em;
   background: var(--secondary-bg-color);
+  text-transform: uppercase;
 }
 
 /* ----Секции---*/
@@ -135,6 +137,7 @@ b {
 .item-title {
   line-height: 1.14;
   font-size: 14px;
+  text-transform: uppercase;
 }
 
 /* ----Чем мы занимаемся---*/
